@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
+import NavBar from "../components/NavBar";
+
 
 function Home() {
-  const [users, setUsers] = useState([])
+  const [users, setUsers] = useState([]);
 
   useEffect(() =>{
     fetch("http://localhost:4000/users")
